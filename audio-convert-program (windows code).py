@@ -7,7 +7,14 @@ import shutil
 import subprocess  # Import the subprocess module
 import tkinter.simpledialog
 
-# icon  
+### IMPORTANT #######################################################################
+# DOWNLOAD THE FFMPEG EXE - AND ADD IT AS A BINARY IN Auto Py To Exe (PyInstaller)
+#####################################################################################
+# The FFMPEG.exe wil be bundled into the .exe program, and run in the background with the program when converting.
+# Other users don't need to install anything - it's PLUG-AND-PLAY - just run it and convert videos!
+
+# icon
+### add the 'icon.ico' as an Additional Files in Auto Py To Exe (PyInstaller) 
 if getattr(sys, 'frozen', False):
     # Running as a bundled executable
     icon_path = sys._MEIPASS + "\\icon.ico"
